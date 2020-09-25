@@ -2,10 +2,10 @@
 基于微服务架构的综合项目
 
 基础服务：
+core: 用户管理、角色管理、权限管理
 auth:登录、鉴权、安全认证（SpringSecurity、OAuth2）
 message：消息收发、消息管理（kafka）
-flow：flowyable
-core:
+flow：流程管理(flowyable)
 common：redis、elasticsearch、quartz
 
 业务服务：
@@ -20,9 +20,13 @@ feign
 hystrix
 
 Spring扩展点：
-1、
-2、
-3、
+1、事件发布、监听
+2、容器扩展
+3、FactoryBeanPostProcessor
+4、InitializingBean
+5、BeanPostProcessor
+6、Aware接口
+7、SPI机制
 
 功能模块：
 1、动态生成接口；
