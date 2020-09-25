@@ -19,8 +19,7 @@ import org.springframework.stereotype.Component;
  */
 @TableName("base_user")
 @Data
-@Component
-public class User implements InitializingBean {
+public class User {
 
     @TableId("user_id")
     private Integer userId = 1;
@@ -33,16 +32,4 @@ public class User implements InitializingBean {
 
     @TableField("role_id")
     private Integer roleId;
-
-    /**
-     * 实现InitializingBean接口的bean，spring容器在实例化该bean之后，将会调用bean的afterPropertiesSet方法
-     * @throws Exception
-     */
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        this.userId = 1;
-        this.userName = "xh";
-        this.userPhone = "123456";
-        this.roleId = 1;
-    }
 }
