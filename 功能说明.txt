@@ -1,0 +1,15 @@
+基础服务：
+base-core:用户管理、角色管理、菜单管理、登录、鉴权、安全认证（shiro）
+base-common：redis、elasticsearch、quartz
+base-message：消息收发、消息管理（kafka）
+base-flow：flowyable
+
+业务服务：
+order
+sale
+
+Spring扩展点：
+1、
+2、
+3、
+
