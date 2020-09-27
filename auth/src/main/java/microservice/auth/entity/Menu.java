@@ -1,4 +1,4 @@
-package microservice.core.entity;
+package microservice.auth.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -10,12 +10,12 @@ import lombok.Data;
  * @Description:
  * @Date: Created in 22:06 2020/9/20
  */
-@TableName("base_role")
+@TableName("base_menu")
 @Data
-public class Role {
-    @TableId("role_id")
-    private Integer roleId;
+public class Menu {
+    @TableId("menu_id")
+    private Integer menuId;
 
-    @TableField("role_name")
-    private String roleName;
+    @TableField("menu_name")
+    private String menuName;
 }

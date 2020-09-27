@@ -1,16 +1,9 @@
-package microservice.core.entity;
+package microservice.auth.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
-import org.springframework.stereotype.Component;
 
 /**
  * @Authore: x18266
@@ -32,4 +25,7 @@ public class User {
 
     @TableField("role_id")
     private Integer roleId;
+
+    @TableField("password")
+    private String password;
 }

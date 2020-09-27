@@ -1,7 +1,7 @@
-package microservice.core.mapper;
+package microservice.auth.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import microservice.core.entity.Role;
+import microservice.auth.entity.Role;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

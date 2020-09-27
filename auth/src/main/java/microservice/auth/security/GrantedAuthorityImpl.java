@@ -1,4 +1,4 @@
-package microservice.auth.service;
+package microservice.auth.security;
 
 import org.springframework.security.core.GrantedAuthority;
 

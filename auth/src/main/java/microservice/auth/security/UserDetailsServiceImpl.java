@@ -1,6 +1,7 @@
-package microservice.auth.service;
+package microservice.auth.security;
 
-import microservice.auth.security.JwtUserDetails;
+import microservice.auth.entity.User;
+import microservice.auth.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,9 +1,8 @@
-package microservice.core.mapper;
+package microservice.auth.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import microservice.core.entity.User;
+import microservice.auth.entity.User;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Service;
 
 /**
  * @Author: x18266

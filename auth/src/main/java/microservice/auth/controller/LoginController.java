@@ -4,8 +4,8 @@ import microservice.auth.security.JwtAuthenticatioToken;
 import microservice.auth.security.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,7 +28,7 @@ public class LoginController {
     /**
      * 登录接口
      */
-    @PostMapping(value = "/login")
+    @GetMapping(value = "/login")
     public Map<String, Object> login(@RequestParam("username") String username, @RequestParam("password") String password,
                                      HttpServletRequest request) throws IOException {
         Map<String, Object> result = new HashMap<>();
